@@ -1,19 +1,30 @@
 # Usage
+```php 
 require_once('QueryBuilder.php');
 $QueryBuilder = new QueryBuilder(pdo $pdo);
+```
 
-# Get all columns
+### Get all columns
+```php 
 $QueryBuilder->getAll($table);
+```
 
-# Get one column
+### Get one column
+```php 
 $QueryBuilder->getOne($table, $id);
+```
 
-# Create column
+### Create column
+```php 
 $QueryBuilder->create($table, $data);
+```
 
-# Update column
-$QueryBuilder->create($table, $id);
+### Update column
+```php 
+$QueryBuilder->update($table, $id);
+```
 
-
-# Delete column
-$QueryBuilder->create($table, $id);
+### Delete column
+```php 
+$QueryBuilder->delete($table, $id);
+```
